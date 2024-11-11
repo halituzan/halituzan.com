@@ -31,7 +31,7 @@ const timelineData: TimelineItem[] = [
     title: "Frontend Developer",
     company: "Codelisa Technology",
     description:
-      "Leading the development of enterprise-scale applications and mentoring junior developers.",
+      "Müşteri odaklı, modüler web siteleri ve mobil uygulamalar üzerinde çalıştım.",
     skills: [
       "Typescript",
       "Javascript",
@@ -139,10 +139,7 @@ const WorkTimeline = () => {
 
       <div className='relative'>
         {timelineData.map((item, index) => (
-          <div
-            key={item?.id}
-            className='flex justify-center items-center mb-0'
-          >
+          <div key={item?.id} className='flex justify-center items-center mb-0'>
             {/* Animated Dot */}
             <motion.div
               initial={{ scale: 0 }}
@@ -155,7 +152,9 @@ const WorkTimeline = () => {
 
             <div className='grid grid-cols-[1fr] lg:grid-cols-[1fr,auto] items-center w-full gap-8'>
               {/* Left Content */}
-              <div className={`${!item?.isLeft && "order-3"} lg:order-1 order-2`}>
+              <div
+                className={`${!item?.isLeft && "order-3"} lg:order-1 order-2`}
+              >
                 {item?.isLeft && <TimelineCard item={item} isLeft={true} />}
               </div>
 
@@ -171,7 +170,7 @@ const WorkTimeline = () => {
                   {item?.date}
                 </span>
               </motion.div>
-              <div className="order-3"></div>
+              <div className='order-3'></div>
 
               {/* Right Content */}
               {/* <div className={`${item?.isLeft && "order-3"}`}>
