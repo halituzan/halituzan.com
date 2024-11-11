@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE ve Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+@layer utilities {
+    .custom-text-h1 {
+        @apply text-3xl font-medium bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent;
+    }
+
+    .custom-text-h2 {
+        @apply text-2xl font-medium bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent;
+    }
+
+    .custom-text-h3 {
+        @apply text-xl font-medium bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent;
+    }
+
+    .custom-text-h4 {
+        @apply text-lg font-medium bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent;
+    }
+
+    .custom-text-h5 {
+        @apply font-medium bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent;
+    }
+
+    .custom-text-h6 {
+        @apply text-xs font-medium bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent;
+    }
+
+}
