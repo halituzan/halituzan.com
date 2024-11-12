@@ -91,7 +91,7 @@ const HomeSection = () => {
                   {personalInfo.location}
                 </div>
                 <div>
-                  <div className='flex justify-center gap-1 p-2 lg:hidden'>
+                  <div className='flex justify-center gap-1 p-2'>
                     <Link
                       target='_blank'
                       href={"https://github.com/halituzan"}
@@ -105,13 +105,6 @@ const HomeSection = () => {
                       className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
                     >
                       <Linkedin className='w-5 h-5' />
-                    </Link>
-                    <Link
-                      target='_blank'
-                      href={"mailto:halit.uzan@gmail.com"}
-                      className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
-                    >
-                      <Mail className='w-5 h-5' />
                     </Link>
 
                     <Link
@@ -127,6 +120,13 @@ const HomeSection = () => {
                       className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
                     >
                       <Instagram className='w-5 h-5' />
+                    </Link>
+                    <Link
+                      target='_blank'
+                      href={"mailto:halit.uzan@gmail.com"}
+                      className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
+                    >
+                      <Mail className='w-5 h-5' />
                     </Link>
                     <Link
                       href={"phone:+905301142548"}

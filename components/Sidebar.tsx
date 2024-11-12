@@ -65,7 +65,7 @@ const Sidebar = () => {
           />
         ))}
       </Tabs>
-      <div className='flex justify-center gap-1 p-2'>
+      {/* <div className='flex justify-center gap-1 p-2'>
         <Link
           target='_blank'
           href={"https://github.com/halituzan"}
@@ -120,7 +120,7 @@ const Sidebar = () => {
           <Download className='w-4 h-4 mr-2' />
           CV
         </Link>
-      </div>
+      </div> */}
       <div className="w-full flex justify-center mb-2">
         <ThemeSwitcher />
       </div>
