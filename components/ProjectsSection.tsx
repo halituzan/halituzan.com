@@ -15,8 +15,8 @@ const ProjectsSection = () => {
         "Pazaryerleri API servislerini kullanarak e-ticaret işletmelerinin ürün yönetimini kolaylaştıran IMS sistemidir. Bu yazılımın amacı, eticaret işletmelerinin ürünlerini gruplayarak tek bir platformdan tüm ürünlerinin stok ve fiyat bilgilerini günvellemesidir.",
       image: "/projects/entegrenity.jpg",
       technologies: ["NextJs", "Tailwindcss", "Javascript", "MongoDb"],
-      githubLink: "https://github.com/username/project",
-      liveLink: "https://project-demo.com",
+      githubLink: "https://github.com/halituzan",
+      liveLink: "https://entegrenity.com",
     },
     {
       title: "Trendyol Barcode Finder",
@@ -24,8 +24,8 @@ const ProjectsSection = () => {
         "Trendyol'da listelenen ürünlerin barkodlarını bulmayı kolaylaştıran Google Chrome eklentisidir. Versiyon 2 olarak geliştirilmiş bir üst versiyonudur. Eski versiyonu için Trendyol Barcode eklentisi incelenebilir.",
       image: "/projects/barcode-finder.jpg",
       technologies: ["HTML", "Javascript", "Bootstrap"],
-      githubLink: "https://github.com/username/project",
-      liveLink: "https://project-demo.com",
+      githubLink: "https://github.com/halituzan",
+      liveLink: "https://chromewebstore.google.com/detail/trendyol-barkod-finder/mlpdemjleelebmdmhhnklcmhooniclpd",
     },
     {
       title: "TDK All API Package",
@@ -33,8 +33,8 @@ const ProjectsSection = () => {
         "Türk Dil Kurumu API larını kullanarak istenilen kelimenin anlamlarını JSON response olarak getiren bir npm paketi.",
       image: "/projects/tdk.jpg",
       technologies: ["NPM", "Javascript"],
-      githubLink: "https://github.com/username/project",
-      liveLink: "https://project-demo.com",
+      githubLink: "https://github.com/halituzan/tdk-all-api",
+      liveLink: "https://www.npmjs.com/package/tdk-all-api",
     },
   ];
 
