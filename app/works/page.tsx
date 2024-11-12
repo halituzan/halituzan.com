@@ -163,8 +163,7 @@ const WorkTimeline = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2, duration: 0.5 }}
-                className='z-10 px-6 py-2 rounded-xl bg-gradient-to-r from-default-100 to-default-200/80 backdrop-blur-sm 
-                          border border-white/20 min-w-[140px] flex justify-center items-center lg:order-2 order-1'
+                className='z-0 px-6 py-2 rounded-xl bg-gradient-to-r from-default-100 to-default-200/80 backdrop-blur-sm border border-white/20 min-w-[140px] flex justify-center items-center lg:order-2 order-1'
               >
                 <span className='text-sm font-medium bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent '>
                   {item?.date}

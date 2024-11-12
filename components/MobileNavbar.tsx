@@ -26,7 +26,7 @@ const MobileNavbar = () => {
   };
 
   return (
-    <div className='flex w-full flex-col bg-default-100 rounded-lg mt-2 z-50'>
+    <div className='flex w-full flex-col bg-default-100 rounded-t-lg z-50'>
       <Tabs
         aria-label='Navigation tabs'
         selectedKey={selected}
@@ -34,20 +34,19 @@ const MobileNavbar = () => {
         variant='light'
         radius='lg'
         classNames={{
-          base: "rounded-xl ",
-          //   tabList: "gap-2 w-full relative rounded-lg bg-white p-2",
-          //   cursor: "bg-white",
-          tab: " px-4 h-10",
-          //   tabContent:
-          //     "text-gray-500 group-data-[selected=true]:text-black font-medium",
+          base: "rounded-t-lg mb-0 pb-0 rounded-b-none rounded-t-md",
+          tabList: "mb-0 pb-0 gap-0 md:gap-2 rounded-b-none rounded-t-md",
+          cursor: "rounded-b-none rounded-t-md pb-0 mb-0",
+          tab: "lg:px-4 px-1 h-9 rounded-b-none rounded-t-md",
+          //tabContent: "rounded mb-0 pb-0",
         }}
       >
         {navigationTabs.map((item) => (
           <Tab
             key={item.id}
-            className="px-1"
+            className='px-1'
             title={
-              <div className='flex items-center space-x-2'>
+              <div className='flex items-center space-x-2 '>
                 <span>{item.label}</span>
               </div>
             }

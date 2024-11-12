@@ -9,8 +9,11 @@ const SkillsSection = () => {
       category: "Frontend",
       icon: <Code2 className='w-6 h-6' />,
       items: [
+        "Javascript",
+        "HTML5",
+        "CSS3",
         "React",
-        "Next.js",
+        "NextJs",
         "TypeScript",
         "TailwindCSS",
         "MaterialUl",

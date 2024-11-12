@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import ThemeSwitcher from "./ThemeSwitch";
 
 const Sidebar = () => {
   const router = useRouter();
@@ -105,7 +106,7 @@ const Sidebar = () => {
         <Link
           href={"phone:+905301142548"}
           className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
-          title="+90 (530) 114 25 48"
+          title='+90 (530) 114 25 48'
         >
           <Phone className='w-5 h-5' />
         </Link>
@@ -119,6 +120,9 @@ const Sidebar = () => {
           <Download className='w-4 h-4 mr-2' />
           CV
         </Link>
+      </div>
+      <div className="w-full flex justify-center mb-2">
+        <ThemeSwitcher />
       </div>
     </div>
   );

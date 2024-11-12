@@ -4,9 +4,16 @@ import { motion } from "framer-motion";
 import {
   Briefcase,
   Calendar,
+  Download,
+  Github,
   GraduationCap,
+  Instagram,
+  Linkedin,
+  Mail,
   MapPin,
+  Phone,
   SquareArrowOutUpRight,
+  Twitter,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -83,6 +90,61 @@ const HomeSection = () => {
                   <MapPin className='w-4 h-4' />
                   {personalInfo.location}
                 </div>
+                <div>
+                  <div className='flex justify-center gap-1 p-2 lg:hidden'>
+                    <Link
+                      target='_blank'
+                      href={"https://github.com/halituzan"}
+                      className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
+                    >
+                      <Github className='w-5 h-5' />
+                    </Link>
+                    <Link
+                      target='_blank'
+                      href={"https://www.linkedin.com/in/halituzan/"}
+                      className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
+                    >
+                      <Linkedin className='w-5 h-5' />
+                    </Link>
+                    <Link
+                      target='_blank'
+                      href={"mailto:halit.uzan@gmail.com"}
+                      className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
+                    >
+                      <Mail className='w-5 h-5' />
+                    </Link>
+
+                    <Link
+                      target='_blank'
+                      href={"https://x.com/uzandev"}
+                      className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
+                    >
+                      <Twitter className='w-5 h-5' />
+                    </Link>
+                    <Link
+                      target='_blank'
+                      href={"https://instagram.com/halit.dev"}
+                      className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
+                    >
+                      <Instagram className='w-5 h-5' />
+                    </Link>
+                    <Link
+                      href={"phone:+905301142548"}
+                      className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
+                      title='+90 (530) 114 25 48'
+                    >
+                      <Phone className='w-5 h-5' />
+                    </Link>
+                    <Link
+                      href={"/files/cv.pdf"}
+                      target='_blank'
+                      className='p-1 px-4 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900 flex items-center'
+                    >
+                      <Download className='w-4 h-4 mr-2' />
+                      CV
+                    </Link>
+                  </div>
+                </div>
               </div>
             </CardBody>
           </Card>
@@ -120,7 +182,7 @@ const HomeSection = () => {
                 {experience.map((exp, index) => (
                   <div key={index} className='flex gap-4'>
                     <div className='mt-1'>
-                      <Briefcase className='w-5 h-5 ' />
+                      <Briefcase className='w-5 h-5 text-primary' />
                     </div>
                     <div>
                       <h3 className='text-lg font-semibold'>{exp.title}</h3>

@@ -6,6 +6,7 @@ import "@/styles/globals.css";
 import clsx from "clsx";
 import { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
+import ThemeSwitcher from "@/components/ThemeSwitch";
 
 export const metadata: Metadata = {
   title: {
@@ -41,14 +42,17 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className='relative h-screen container mx-auto max-w-6xl lg:px-6 px-1 flex flex-grow gap-4'>
+            <div className='lg:hidden flex ml-2 z-50  absolute right-2 top-2'>
+              <ThemeSwitcher />
+            </div>
             <aside className='col-span-2 hidden lg:block'>
               <Sidebar />
             </aside>
             <main className='flex-1 col-span-10 max-h-screen overflow-y-auto scrollbar-hide pt-2 pb-10 lg:pb-0'>
               {children}
             </main>
-            <nav className='flex justify-center lg:hidden fixed left-1/2 -translate-x-1/2 bottom-4 w-full'>
-              <div className='px-4'>
+            <nav className='flex justify-center lg:hidden fixed left-1/2 -translate-x-1/2 bottom-0 w-full'>
+              <div className='px-4 flex items-center justify-center'>
                 <MobileNavbar />
               </div>
             </nav>
