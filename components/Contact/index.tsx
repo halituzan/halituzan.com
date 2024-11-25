@@ -113,29 +113,29 @@ const ContactForm: React.FC = () => {
       });
       console.log("token", token);
 
-    //   const response = await fetch("/api/send-email", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify({
-    //       ...formData,
-    //       recaptchaToken: token,
-    //     }),
-    //   });
+      //   const response = await fetch("/api/send-email", {
+      //     method: "POST",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({
+      //       ...formData,
+      //       recaptchaToken: token,
+      //     }),
+      //   });
 
-    //   const data: ApiResponse = await response.json();
+      //   const data: ApiResponse = await response.json();
 
-    //   if (response.ok && data.success) {
-    //     setStatus("success");
-    //     setFormData({ name: "", email: "", subject: "", message: "" });
-    //   } else {
-    //     if (data.error === "recaptcha-failed") {
-    //       setCaptchaError(true);
-    //     } else {
-    //       setStatus("error");
-    //     }
-    //   }
+      //   if (response.ok && data.success) {
+      //     setStatus("success");
+      //     setFormData({ name: "", email: "", subject: "", message: "" });
+      //   } else {
+      //     if (data.error === "recaptcha-failed") {
+      //       setCaptchaError(true);
+      //     } else {
+      //       setStatus("error");
+      //     }
+      //   }
     } catch (error) {
       console.error("Error:", error);
       setStatus("error");
@@ -157,10 +157,10 @@ const ContactForm: React.FC = () => {
   return (
     <div className='min-h-screen flex items-start justify-center p-4 pt-0'>
       <Card shadow='none' className='w-full mx-auto border '>
-        <CardHeader className='space-y-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-t-lg px-6 py-8 flex flex-col'>
+        <CardHeader className='space-y-1 bg-gradient-to-r from-indigo-500 to-pink-500 text-white rounded-t-lg px-6 py-8 flex flex-col'>
           <h2 className='text-3xl font-bold text-center'>İletişim</h2>
           <p className='text-blue-100 text-center'>
-            Aşağıdaki formu kullanarak benimle iletişime geçebilirsiniz?
+            Aşağıdaki formu kullanarak benimle iletişime geçebilirsiniz.
           </p>
         </CardHeader>
         <CardBody className='space-y-6 p-6'>
@@ -246,7 +246,7 @@ const ContactForm: React.FC = () => {
             />
             <Button
               type='submit'
-              className='w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-6'
+              className='w-full bg-gradient-to-r from-indigo-500 to-pink-500 text-white py-6'
               disabled={loading || !isVerified}
             >
               {loading ? (

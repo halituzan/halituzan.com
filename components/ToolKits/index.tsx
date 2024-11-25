@@ -24,7 +24,7 @@ const ToolkitPage = () => {
                 <div className='mr-2'>
                   <item.icon />
                 </div>
-                <h3 className='custom-text-h2'>{item.title}</h3>
+                <h3 className='custom-text-h5'>{item.title}</h3>
               </CardHeader>
               <CardBody>
                 <p className='text-sm text-gray-500'>{item.description}</p>
