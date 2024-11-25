@@ -3,82 +3,8 @@ import React from "react";
 import { Card, CardBody } from "@nextui-org/card";
 import { Chip } from "@nextui-org/chip";
 import { motion } from "framer-motion";
+import { timelineData, TimelineItem } from "@/config";
 
-interface TimelineItem {
-  id: number;
-  date: string;
-  title?: string;
-  company?: string;
-  description?: string;
-  skills: string[];
-  isLeft?: boolean;
-}
-
-const timelineData: TimelineItem[] = [
-  {
-    id: 0,
-    date: "2024 ~",
-    title: "Software Developer (Hiring)",
-    description:
-      "İş arayışımda olan bir yazılım geliştiriciyim. Hem ofisten hem uzaktan çalışmaya, aynı zamanda freelance projelere de açığım. Projelerde kullanıcı deneyimini ve performansı ön planda tutarak, yenilikçi çözümler sunmayı hedefliyorum. Şirketlerin ve projelerin ihtiyaçlarına değer katabileceğim bir pozisyon arıyorum.",
-    skills: [],
-    isLeft: true,
-  },
-
-  {
-    id: 1,
-    date: "2022 - 2024",
-    title: "Frontend Developer",
-    company: "Codelisa Technology",
-    description:
-      "Müşteri odaklı, modüler web siteleri ve mobil uygulamalar üzerinde çalıştım.",
-    skills: [
-      "Typescript",
-      "Javascript",
-      "HTML",
-      "CSS",
-      "TailwindCss",
-      "ReactJs",
-      "NextJs",
-      "Material UI",
-      "Mantine UI",
-      "Micro-Frontend",
-      "MongoDB",
-      "Express",
-      "NodeJs",
-    ],
-    isLeft: true,
-  },
-  {
-    id: 2,
-    date: "2021 - 2022",
-    title: "Frontend Developer (Intern)",
-    company: "ETurnsoft",
-    description:
-      "Yönetim paneli ile kullanıcı yönetim sistemleri üzerine çalıştım.",
-    skills: [
-      "Javascript",
-      "HTML",
-      "CSS",
-      "Bootstrap",
-      "React",
-      "Next.js",
-      "MongoDB",
-      "Express",
-    ],
-    isLeft: true,
-  },
-  {
-    id: 3,
-    date: "2018 - 2022",
-    title: "E-Ticaret",
-    company: "Sincap Dükkan",
-    description:
-      "E-ticaret alanında güçlü bir geçmişe sahibim ve Trendyol, Hepsiburada gibi Türkiye’nin önde gelen e-ticaret platformlarında satış yaparak pazarlama ve müşteri ilişkileri konusunda değerli deneyimler kazandım. Aynı zamanda, OpenCart altyapısını kullanarak kendi e-ticaret sitemi yönetme sorumluluğunu üstlendim. Bu süreçte, ürün yönetimi, sipariş süreçleri, stok takibi ve müşteri memnuniyeti gibi konularda kapsamlı bilgi edinme fırsatım oldu.",
-    skills: [],
-    isLeft: true,
-  },
-];
 
 const TimelineCard = ({
   item,
@@ -138,7 +64,7 @@ const WorkTimeline = () => {
       <div className='absolute right-1/2 min-h-[3000px] lg:min-h-[2000px] self-stretch -translate-y-1/2 lg:right-[85px] top-0 bottom-0 -translate-x-1/2 w-[2px] bg-gradient-to-b from-default-100 via-default-500 to-default-200 opacity-30 ' />
 
       <div className='relative'>
-        {timelineData.map((item, index) => (
+        {timelineData?.map((item, index) => (
           <div key={item?.id} className='flex justify-center items-center mb-0'>
             {/* Animated Dot */}
             <motion.div
