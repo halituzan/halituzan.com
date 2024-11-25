@@ -1,6 +1,9 @@
 "use client";
-import { Card, CardBody, CardFooter } from "@nextui-org/card";
+import { education, experience, personalInfo } from "@/config";
+import { Card, CardBody } from "@nextui-org/card";
 import { motion } from "framer-motion";
+console.log("personalInfo", personalInfo);
+
 import {
   Briefcase,
   Calendar,
@@ -18,45 +21,6 @@ import {
 import Link from "next/link";
 
 const HomeSection = () => {
-  const personalInfo = {
-    name: "Halit Uzan",
-    title: "Software Developer",
-    location: "İstanbul, Türkiye",
-    email: "johndoe@example.com",
-    image: "/images/profile.jpg",
-    bio: `<div>
-    <p class="mb-2">Merhaba! Ben Halit, yazılım geliştirme süreçlerinde kullanıcı deneyimini ön planda tutarak işlevsel ve modern çözümler üreten bir geliştiriciyim. Özellikle Next.js, Node.js ve MongoDB gibi teknolojilerle çalışıyorum ve veri yönetiminde geniş bir tecrübeye sahibim.</p>
-    <p class="mb-2">
-     Projelerimde hem frontend hem de backend tarafında dengeli ve güçlü yapılar kurmaya özen gösteriyorum. Fabric.js ve React ile kullanıcı dostu arayüzler geliştiriyor, özel taleplere uygun çözümler sunuyorum.
-    </p>
-    <p class="mb-2">
-    Farklı projelerimde performansı optimize etmek, kullanıcı deneyimini en üst seviyeye taşımak için çalışıyorum.Yazılım dünyasında yeniliklere açık, öğrenmeyi seven biriyim. İletişime geçmekten çekinmeyin, birlikte daha fazlasını başarabiliriz!
-    </p>
-    </div>`,
-    links: {
-      github: "https://github.com/username",
-      linkedin: "https://linkedin.com/in/username",
-    },
-  };
-
-  const experience = [
-    {
-      title: "Front-End Developer",
-      company: "Codelisa Teknoloji",
-      period: "2022 - 2024",
-      description:
-        "Modern web uygulamaları geliştirme, teknik liderlik, mimari kararlar alma.",
-    },
-  ];
-
-  const education = [
-    {
-      degree: "İktisat",
-      school: "Karadeniz Teknik Üniversitesi",
-      period: "2010 - 2014",
-    },
-  ];
-
   return (
     <div className='max-w-6xl mx-auto p-8 pt-0'>
       <motion.div
@@ -75,20 +39,20 @@ const HomeSection = () => {
               <div className='flex flex-col items-center text-center'>
                 <div className='w-32 h-32 rounded-full overflow-hidden mb-2'>
                   <img
-                    src={personalInfo.image}
-                    alt={personalInfo.name}
+                    src={personalInfo?.image}
+                    alt={personalInfo?.name}
                     className='w-full h-full object-cover'
                   />
                 </div>
 
-                <h1 className='text-xl font-bold mb-2'>{personalInfo.name}</h1>
+                <h1 className='text-xl font-bold mb-2'>{personalInfo?.name}</h1>
                 <h2 className='text-lg text-muted-foreground mb-2 custom-text-h2'>
-                  {personalInfo.title}
+                  {personalInfo?.title}
                 </h2>
 
                 <div className='flex items-center gap-2 text-sm text-muted-foreground mb-4'>
                   <MapPin className='w-4 h-4' />
-                  {personalInfo.location}
+                  {personalInfo?.location}
                 </div>
                 <div>
                   <div className='flex justify-center gap-1 p-2'>
@@ -164,7 +128,7 @@ const HomeSection = () => {
                 Hakkımda
               </h2>
               <div className='text-muted-foreground leading-relaxed'>
-                <div dangerouslySetInnerHTML={{ __html: personalInfo.bio }} />
+                <div dangerouslySetInnerHTML={{ __html: personalInfo?.bio }} />
               </div>
             </CardBody>
           </Card>
@@ -179,7 +143,7 @@ const HomeSection = () => {
                 </Link>
               </div>
               <div className='space-y-6'>
-                {experience.map((exp, index) => (
+                {experience?.map((exp, index) => (
                   <div key={index} className='flex gap-4'>
                     <div className='mt-1'>
                       <Briefcase className='w-5 h-5 text-primary' />
@@ -206,7 +170,7 @@ const HomeSection = () => {
                 Eğitim
               </h2>
               <div className='space-y-6'>
-                {education.map((edu, index) => (
+                {education?.map((edu, index) => (
                   <div key={index} className='flex gap-4'>
                     <div className='mt-1'>
                       <GraduationCap className='w-5 h-5 text-primary' />

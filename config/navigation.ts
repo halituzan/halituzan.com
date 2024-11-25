@@ -25,10 +25,15 @@ export const navigationTabs: TabItem[] = [
     label: "Yetenekler",
     path: "/skills",
   },
+  // {
+  //   id: "contact",
+  //   label: "İletişim",
+  //   path: "/contact",
+  // },
   {
-    id: "contact",
-    label: "İletişim",
-    path: "/contact",
+    id: "toolkits",
+    label: "Toolkits",
+    path: "/toolkits",
   },
 
   // {
