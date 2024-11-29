@@ -128,6 +128,12 @@ export const toolkitItems = [
     url: "https://transform.tools/json-to-typescript",
     icon: Undo2,
   },
+  {
+    title: "Skeleton Generator",
+    description: "Tailwindcss kodlarınızı hızlı bir şekilde skeleton loader a dönüştürür",
+    url: "https://skeletongenerator.com/",
+    icon: WandSparkles,
+  },
 ];
 
 export const projects = [
@@ -142,7 +148,8 @@ export const projects = [
   },
   {
     title: "Budget App",
-    description: "Gelir ve giderlerinizi kolaylıkla takip edebileceğiniz web application.",
+    description:
+      "Gelir ve giderlerinizi kolaylıkla takip edebileceğiniz web application.",
     image: "/projects/budget-app.jpg",
     technologies: ["NextJs", "Tailwindcss", "Javascript"],
     githubLink: "https://github.com/halituzan/income-and-expense",
