@@ -35,6 +35,11 @@ export const navigationTabs: TabItem[] = [
     label: "Toolkits",
     path: "/toolkits",
   },
+  {
+    id: "tips-and-tricks",
+    label: "Tips",
+    path: "/tips-and-tricks",
+  },
 
   // {
   //   id: "cv",

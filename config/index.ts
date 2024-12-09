@@ -130,7 +130,8 @@ export const toolkitItems = [
   },
   {
     title: "Skeleton Generator",
-    description: "Tailwindcss kodlarınızı hızlı bir şekilde skeleton loader a dönüştürür",
+    description:
+      "Tailwindcss kodlarınızı hızlı bir şekilde skeleton loader a dönüştürür",
     url: "https://skeletongenerator.com/",
     icon: WandSparkles,
   },
@@ -173,5 +174,16 @@ export const projects = [
     technologies: ["NPM", "Javascript"],
     githubLink: "https://github.com/halituzan/tdk-all-api",
     liveLink: "https://www.npmjs.com/package/tdk-all-api",
+  },
+];
+
+export const tipsAndTricks = [
+  {
+    id: "1",
+    name: "TypeScript Utility Types",
+    folder: "typescripts",
+    file: "typescript-utility-types",
+    icon: "typescript",
+    type: "pdf",
   },
 ];
