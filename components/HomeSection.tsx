@@ -2,8 +2,6 @@
 import { education, experience, personalInfo } from "@/config";
 import { Card, CardBody } from "@nextui-org/card";
 import { motion } from "framer-motion";
-console.log("personalInfo", personalInfo);
-
 import {
   Briefcase,
   Calendar,

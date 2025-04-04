@@ -3,22 +3,13 @@ import React, { useEffect, useState } from "react";
 
 import { navigationTabs } from "@/config/navigation";
 import { Tab, Tabs } from "@nextui-org/tabs";
-import {
-  Download,
-  Github,
-  Instagram,
-  Linkedin,
-  Mail,
-  Phone,
-  Twitter,
-} from "lucide-react";
-import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import ThemeSwitcher from "./ThemeSwitch";
 
 const Sidebar = () => {
   const router = useRouter();
   const pathname = usePathname();
+
   const [selected, setSelected] = useState<string>("");
 
   useEffect(() => {
@@ -47,11 +38,7 @@ const Sidebar = () => {
         isVertical
         classNames={{
           base: "rounded-xl p-2",
-          //   tabList: "gap-2 w-full relative rounded-lg bg-white p-2",
-          //   cursor: "bg-white",
           tab: "max-w-fit px-4 h-10",
-          //   tabContent:
-          //     "text-gray-500 group-data-[selected=true]:text-black font-medium",
         }}
       >
         {navigationTabs.map((item) => (
@@ -65,63 +52,7 @@ const Sidebar = () => {
           />
         ))}
       </Tabs>
-      {/* <div className='flex justify-center gap-1 p-2'>
-        <Link
-          target='_blank'
-          href={"https://github.com/halituzan"}
-          className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
-        >
-          <Github className='w-5 h-5' />
-        </Link>
-        <Link
-          target='_blank'
-          href={"https://www.linkedin.com/in/halituzan/"}
-          className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
-        >
-          <Linkedin className='w-5 h-5' />
-        </Link>
-        <Link
-          target='_blank'
-          href={"mailto:halit.uzan@gmail.com"}
-          className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
-        >
-          <Mail className='w-5 h-5' />
-        </Link>
-      </div>
-      <div className='flex justify-center gap-1 p-2'>
-        <Link
-          target='_blank'
-          href={"https://x.com/uzandev"}
-          className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
-        >
-          <Twitter className='w-5 h-5' />
-        </Link>
-        <Link
-          target='_blank'
-          href={"https://instagram.com/halit.dev"}
-          className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
-        >
-          <Instagram className='w-5 h-5' />
-        </Link>
-        <Link
-          href={"phone:+905301142548"}
-          className='p-1 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900'
-          title='+90 (530) 114 25 48'
-        >
-          <Phone className='w-5 h-5' />
-        </Link>
-      </div>
-      <div className='flex justify-center gap-1 p-2'>
-        <Link
-          href={"/files/cv.pdf"}
-          target='_blank'
-          className='p-1 px-4 bg-default-50 rounded-lg hover:bg-default-200 hover:text-default-900 flex items-center'
-        >
-          <Download className='w-4 h-4 mr-2' />
-          CV
-        </Link>
-      </div> */}
-      <div className="w-full flex justify-center mb-2">
+      <div className='w-full flex justify-center mb-2'>
         <ThemeSwitcher />
       </div>
     </div>
