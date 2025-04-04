@@ -52,10 +52,11 @@ export const timelineData: TimelineItem[] = [
   {
     id: 0,
     date: "2024 ~",
-    title: "Software Developer (Hiring)",
+    title: "Software Develope",
+    company: "LC Waikiki",
     description:
-      "İş arayışımda olan bir yazılım geliştiriciyim. Hem ofisten hem uzaktan çalışmaya, aynı zamanda freelance projelere de açığım. Projelerde kullanıcı deneyimini ve performansı ön planda tutarak, yenilikçi çözümler sunmayı hedefliyorum. Şirketlerin ve projelerin ihtiyaçlarına değer katabileceğim bir pozisyon arıyorum.",
-    skills: [],
+      "Aktif olarak LCWaikiki bünyesinde yazılım geliştirme yapıyorum. İç projelerde kullanılan ERP sistemi ile ilgili çalışmalar yapıyorum.",
+    skills: ["ReactJs", "SCSS", "Javascript", "Material UI", ".NET"],
     isLeft: true,
   },
 
