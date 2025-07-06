@@ -42,8 +42,8 @@ export const navigationTabs: TabItem[] = [
   },
 
   // {
-  //   id: "cv",
-  //   label: "Öz Geçmişim",
-  //   path: "/cv",
+  //   id: "apps",
+  //   label: "Apps",
+  //   path: "/apps",
   // },
 ];
