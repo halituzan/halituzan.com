@@ -25,8 +25,8 @@ export const personalInfo = {
     </p>
     </div>`,
   links: {
-    github: "https://github.com/username",
-    linkedin: "https://linkedin.com/in/username",
+    github: "https://github.com/halituzan",
+    linkedin: "https://linkedin.com/in/halituzan",
   },
 };
 
@@ -52,10 +52,18 @@ export const timelineData: TimelineItem[] = [
   {
     id: 0,
     date: "2024 ~",
-    title: "Software Developer (Hiring)",
+    title: "Software Developer",
+    company: "LCWaikiki",
     description:
-      "İş arayışımda olan bir yazılım geliştiriciyim. Hem ofisten hem uzaktan çalışmaya, aynı zamanda freelance projelere de açığım. Projelerde kullanıcı deneyimini ve performansı ön planda tutarak, yenilikçi çözümler sunmayı hedefliyorum. Şirketlerin ve projelerin ihtiyaçlarına değer katabileceğim bir pozisyon arıyorum.",
-    skills: [],
+      "LCWaikiki için iç uygulama platformları üzerinde çalışıyorum. Performans iyileştirmeleri, kullanıcı deneyimi geliştirmeleri ve yeni özelliklerin entegrasyonu gibi görevlerde yer alıyorum.",
+    skills: [
+      "Typescript",
+      "Javascript",
+      "HTML",
+      "CSS",
+      "ReactJs",
+      "Material UI",
+    ],
     isLeft: true,
   },
 
