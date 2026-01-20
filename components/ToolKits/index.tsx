@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
+import { Card, CardBody, CardFooter, CardHeader } from "@heroui/card";
 import { motion } from "framer-motion";
 import { SquareArrowOutUpRight, WandSparkles } from "lucide-react";
 import { toolkitItems } from "@/config";

@@ -3,7 +3,7 @@ import Sidebar from "@/components/Sidebar";
 import ThemeSwitcher from "@/components/ThemeSwitch";
 import { poppins } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
-import "@/styles/globals.css";
+import "./globals.css";
 import clsx from "clsx";
 import { Metadata, Viewport } from "next";
 import { Providers } from "./providers";

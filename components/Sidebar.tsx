@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 
 import { navigationTabs } from "@/config/navigation";
-import { Tab, Tabs } from "@nextui-org/tabs";
+import { Tab, Tabs } from "@heroui/tabs";
 import {
   Download,
   Github,

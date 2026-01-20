@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
+@source "../app";
+@source "../components";
+@source "../config";
+@source "../node_modules/@heroui/theme/dist";
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;

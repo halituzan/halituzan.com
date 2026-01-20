@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import { Card, CardBody, CardHeader } from "@nextui-org/card";
-import { Button, ButtonGroup } from "@nextui-org/button";
+import { Card, CardBody, CardHeader } from "@heroui/card";
+import { Button, ButtonGroup } from "@heroui/button";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "./icons";
-import { Chip } from "@nextui-org/chip";
+import { Chip } from "@heroui/chip";
 import { projects } from "@/config";
 
 const ProjectsSection = () => {
